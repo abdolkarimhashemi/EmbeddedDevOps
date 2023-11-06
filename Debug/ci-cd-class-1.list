@@ -27,23 +27,23 @@ Idx Name          Size      VMA       LMA       File off  Algn
                   ALLOC
  11 .ARM.attributes 00000029  00000000  00000000  0002000c  2**0
                   CONTENTS, READONLY
- 12 .debug_info   0000270e  00000000  00000000  00020035  2**0
+ 12 .debug_info   0000271d  00000000  00000000  00020035  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 13 .debug_abbrev 00000c12  00000000  00000000  00022743  2**0
+ 13 .debug_abbrev 00000c2c  00000000  00000000  00022752  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 14 .debug_aranges 00000388  00000000  00000000  00023358  2**3
+ 14 .debug_aranges 00000388  00000000  00000000  00023380  2**3
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 15 .debug_ranges 00000310  00000000  00000000  000236e0  2**3
+ 15 .debug_ranges 00000310  00000000  00000000  00023708  2**3
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 16 .debug_macro  000136dd  00000000  00000000  000239f0  2**0
+ 16 .debug_macro  000136dd  00000000  00000000  00023a18  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 17 .debug_line   00003ec3  00000000  00000000  000370cd  2**0
+ 17 .debug_line   00003ec1  00000000  00000000  000370f5  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 18 .debug_str    00079e85  00000000  00000000  0003af90  2**0
+ 18 .debug_str    00079e89  00000000  00000000  0003afb6  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 19 .comment      00000050  00000000  00000000  000b4e15  2**0
+ 19 .comment      00000050  00000000  00000000  000b4e3f  2**0
                   CONTENTS, READONLY
- 20 .debug_frame  00000ca0  00000000  00000000  000b4e68  2**2
+ 20 .debug_frame  00000ca0  00000000  00000000  000b4e90  2**2
                   CONTENTS, READONLY, DEBUGGING, OCTETS
 
 Disassembly of section .text:
@@ -374,12 +374,12 @@ int main(void)
   /* Configure the system clock */
   SystemClock_Config();
  800048c:	f000 f802 	bl	8000494 <SystemClock_Config>
-
   /* USER CODE END 2 */
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
   while (1)
+  {
  8000490:	e7fe      	b.n	8000490 <main+0xc>
 	...
 
